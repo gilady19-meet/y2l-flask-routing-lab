@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>product 1</title>
+</head>
+<body>
+
+<p>welcome to product 1! shirts!</p>
+<a href= "{{ url_for('home_page') }} "> home</a>
+
+<img src="https://image1.kbobject.com/rm-229848.jpg?width=250&height=250&quality=80">
+<ul>
+	{% for i in products%}
+	<li>{{i}}</li>
+	{% endfor%}
+</ul>
+</body>
+</html>
